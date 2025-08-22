@@ -1,36 +1,36 @@
 # Crypto Price Fetcher from Binance API
 
-Script de Python que obtiene precios históricos de criptomonedas desde la API de Binance y completa un archivo Excel con los valores correspondientes.
+Python script that retrieves historical cryptocurrency prices from the Binance API and populates an Excel file with the corresponding values.
 
-## 📋 Descripción
+## 📋 Description
 
-Este script lee un archivo Excel (`data.xlsx`) que contiene transacciones de criptomonedas y utiliza la API de Binance para:
-- Obtener el precio histórico de cada criptomoneda en la fecha especificada
-- Calcular el valor en USDT de cada transacción
-- Generar sumatorias de cantidades y valores
-- Guardar los resultados en un nuevo archivo Excel
+This script reads an Excel file (`data.xlsx`) containing cryptocurrency transactions and uses the Binance API to:
+- Obtain the historical price of each cryptocurrency on the specified date
+- Calculate the value in USDT for each transaction
+- Generate summaries of quantities and values
+- Save the results in a new Excel file
 
-## 🚀 Características
+## 🚀 Features
 
-- ✅ Consulta la API oficial de Binance
-- ✅ Ajusta automáticamente a hora de California (PST/PDT)
-- ✅ Manejo robusto de errores y excepciones
-- ✅ Preserva el formato original del Excel
-- ✅ Genera reporte con totales y resumen
+- ✅ Queries the official Binance API
+- ✅ Automatically adjusts to California time (PST/PDT)
+- ✅ Robust error and exception handling
+- ✅ Preserves the original Excel format
+- ✅ Generates report with totals and summary
 
-## 📊 Estructura del Archivo Excel de Entrada
+## 📊 Input Excel File Structure
 
-El archivo `data.xlsx` debe tener las siguientes columnas:
-- `crypto`: Símbolo de la criptomoneda (ej: ETH, BTC, ADA)
-- `Quantity`: Cantidad de la criptomoneda
-- `Date`: Fecha de la transacción (formato YYYY-MM-DD HH:MM:SS)
-- `Crypto Value (USDT)`: (Vacío - se completará automáticamente)
-- `Quantity Value (USDT)`: (Vacío - se completará automáticamente)
+The `data.xlsx` file must have the following columns:
+- `crypto`: Cryptocurrency symbol (e.g., ETH, BTC, ADA)
+- `Quantity`: Amount of the cryptocurrency
+- `Date`: Transaction date (format YYYY-MM-DD HH:MM:SS)
+- `Crypto Value (USDT)`: (Empty - will be filled automatically)
+- `Quantity Value (USDT)`: (Empty - will be filled automatically)
 
-## 📦 Instalación
+## 📦 Installation
 
-1. Clona o descarga el repositorio
-2. Instala las dependencias:
+1. Clone or download the repository
+2. Install the dependencies:
 
 ```bash
 pip install -r requirements.txt
